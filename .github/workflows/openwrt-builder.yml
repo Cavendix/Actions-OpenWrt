@@ -67,7 +67,7 @@ jobs:
         make package/dogcom/compile V=s -j$(nproc)
 
     - name: Upload dogcom ipk
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: dogcom_ipk
         path: openwrt/bin/packages/*/*/dogcom_*.ipk
